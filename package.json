@@ -1,0 +1,30 @@
+{
+  "name": "obfusk",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Babel-based JS/TS obfuscation & anti-tamper toolkit for pricing/risk-control frontend code",
+  "scripts": {
+    "test": "vitest run",
+    "bench": "tsx bench/bench.ts",
+    "obfusk": "tsx src/cli.ts"
+  },
+  "dependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/generator": "^7.26.2",
+    "@babel/parser": "^7.26.2",
+    "@babel/preset-typescript": "^7.26.0",
+    "@babel/traverse": "^7.25.9",
+    "@babel/types": "^7.26.0",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/babel__core": "^7.20.5",
+    "@types/babel__generator": "^7.27.0",
+    "@types/babel__traverse": "^7.28.0",
+    "@types/node": "^22.9.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8"
+  }
+}
