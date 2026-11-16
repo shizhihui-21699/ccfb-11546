@@ -1,0 +1,15 @@
+Sentry obfuscator — size & performance benchmark
+iterations per timing sample: 20000, seed: 24301
+
+fixture      preset   original(B)  obfuscated(B)   size x    ns/call   perf x
+--------------------------------------------------------------------------------------
+pricing.cjs  none            1797          1797    1.00        81    1.00
+pricing.cjs  low             1797          8201    4.56       139    1.71
+pricing.cjs  medium          1797          8453    4.70       140    1.72
+pricing.cjs  high            1797          9194    5.12     11368  140.06
+
+risk.cjs     none            1413          1413    1.00        54    1.00
+risk.cjs     low             1413          6137    4.34        94    1.74
+risk.cjs     medium          1413          7026    4.97        90    1.66
+risk.cjs     high            1413          7778    5.50      6182  114.13
+

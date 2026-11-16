@@ -1,0 +1,35 @@
+{
+  "name": "sentry-obfuscator",
+  "version": "0.1.0",
+  "description": "Babel-based TypeScript obfuscation toolkit for pricing/risk-control front-end logic",
+  "type": "module",
+  "bin": {
+    "sentry-obfuscate": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "tsx tests/run-all.ts",
+    "bench": "tsx benchmarks/run.ts"
+  },
+  "dependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/generator": "^7.26.0",
+    "@babel/parser": "^7.26.0",
+    "@babel/preset-typescript": "^7.26.0",
+    "@babel/template": "^7.26.0",
+    "@babel/traverse": "^7.26.0",
+    "@babel/types": "^7.26.0"
+  },
+  "devDependencies": {
+    "@types/babel__core": "^7.20.5",
+    "@types/babel__generator": "^7.6.8",
+    "@types/babel__template": "^7.4.4",
+    "@types/babel__traverse": "^7.20.6",
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.0"
+  }
+}
